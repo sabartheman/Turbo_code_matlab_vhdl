@@ -1,0 +1,28 @@
+Command line:
+   tbcenc_fixpt_isim_design.exe
+     -simmode  tcl
+     -simrunnum  0
+     -socket  37071
+
+Mon Apr  8 16:00:13 2019
+
+
+ Elaboration Time: 0.07 sec
+
+ Current Memory Usage: 165.409 Meg
+
+ Total Signals          : 52
+ Total Nets             : 324
+ Total Signal Drivers   : 93
+ Total Blocks           : 24
+ Total Primitive Blocks : 22
+ Total Processes        : 92
+ Total Traceable Variables  : 32
+ Total Scalar Nets and Variables : 1344
+
+ Total Simulation Time: 0.08 sec
+
+ Current Memory Usage: 240.91 Meg
+
+Mon Apr  8 16:00:14 2019
+

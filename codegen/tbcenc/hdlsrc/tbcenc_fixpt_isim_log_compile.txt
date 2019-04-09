@@ -1,0 +1,4 @@
+Parsing VHDL file "tbcenc_fixpt_pkg.vhd" into library xlib
+Parsing VHDL file "tbcenc_fixpt.vhd" into library xlib
+Parsing VHDL file "tbcenc_fixpt_tb_pkg.vhd" into library xlib
+Parsing VHDL file "tbcenc_fixpt_tb.vhd" into library xlib

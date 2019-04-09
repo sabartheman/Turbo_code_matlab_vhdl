@@ -1,0 +1,11 @@
+
+Warnings: 
+
+File: /home/sky/Documents/MATLAB/Turbo_codes/call_custom_log.m, line : 2, column : 19. Unable to generate math replacement function for 'custom_log'. The input range for the expression 'x' could not be inferred. Consider assigning the expression to a variable and passing it as an input to the function, or providing  design min and design max.
+File: /home/sky/Documents/MATLAB/Turbo_codes/call_custom_exp.m, line : 2, column : 19. Unable to generate math replacement function for 'custom_exp'. The input range for the expression 'x' could not be inferred. Consider assigning the expression to a variable and passing it as an input to the function, or providing  design min and design max.
+Messages: 
+
+File: /home/sky/Documents/MATLAB/Turbo_codes/call_custom_log.m, line : 2, column : 19. Could not find range for expression: 'custom_log(x)'
+File: /home/sky/Documents/MATLAB/Turbo_codes/call_custom_exp.m, line : 2, column : 19. Could not find range for expression: 'custom_exp(x)'
+File: /home/sky/Documents/MATLAB/Turbo_codes/custom_log.m, line : 2, column : 12. Could not find range for expression: 'log(x)'
+File: /home/sky/Documents/MATLAB/Turbo_codes/custom_exp.m, line : 2, column : 12. Could not find range for expression: 'exp(x)'

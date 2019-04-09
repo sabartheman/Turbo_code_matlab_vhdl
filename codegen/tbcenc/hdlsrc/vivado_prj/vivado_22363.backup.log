@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  8 16:00:37 2019
+# Process ID: 22363
+# Current directory: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj
+# Command line: vivado -mode batch -source tbcenc_fixpt_Xilinx_Vivado_run.tcl
+# Log file: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/vivado.log
+# Journal file: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/vivado.jou
+#-----------------------------------------------------------
+source tbcenc_fixpt_Xilinx_Vivado_run.tcl
+# set myTool "Xilinx Vivado 2017.4"
+# set myProject "tbcenc_fixpt_vivado"
+# set myProjectFile "tbcenc_fixpt_vivado.xpr"
+# set myTopLevelEntity "tbcenc_fixpt"
+# set Family "Artix7"
+# set Device "xc7a200tl"
+# set Package "fbg676"
+# set Speed "-2L"
+# set MapTimePathNumber "3"
+# set MapTimeAdvAnalysis "True"
+# set PARTimePathNumber "3"
+# set PARTimeAdvAnalysis "True"
+# puts "### Open existing $myTool project \/home\/sky\/Documents\/MATLAB\/Turbo_codes\/codegen\/tbcenc\/hdlsrc\/vivado_prj\/tbcenc_fixpt_vivado.xpr"
+### Open existing Xilinx Vivado 2017.4 project /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/tbcenc_fixpt_vivado.xpr
+# open_project ${myProject}
+Scanning sources...
+Finished scanning sources
+# puts "### Running Synthesis in $myTool ..."
+### Running Synthesis in Xilinx Vivado 2017.4 ...
+# if { [llength [get_runs synth_1] ] > 0 } { reset_run synth_1}
+# launch_runs synth_1 -force
+[Mon Apr  8 16:00:44 2019] Launched synth_1...
+Run output will be captured here: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/tbcenc_fixpt_vivado.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Mon Apr  8 16:00:44 2019] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log tbcenc_fixpt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tbcenc_fixpt.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source tbcenc_fixpt.tcl -notrace
+Command: synth_design -top tbcenc_fixpt -part xc7a200tlfbg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22454 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.992 ; gain = 65.000 ; free physical = 2505 ; free virtual = 9669
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tbcenc_fixpt' [/home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/tbcenc_fixpt.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'tbcenc_fixpt' (1#1) [/home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/tbcenc_fixpt.vhd:40]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[0][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[1][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[2][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[3][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[4][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[5][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[6][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[7][3]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1251.523 ; gain = 106.531 ; free physical = 2516 ; free virtual = 9682
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1251.523 ; gain = 106.531 ; free physical = 2517 ; free virtual = 9683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tlfbg676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1259.527 ; gain = 114.535 ; free physical = 2517 ; free virtual = 9683
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tlfbg676-2L
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1267.535 ; gain = 122.543 ; free physical = 2508 ; free virtual = 9675
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 8     
++---XORs : 
+	   2 Input     32 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 12    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module tbcenc_fixpt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 8     
++---XORs : 
+	   2 Input     32 Bit         XORs := 12    
+	   2 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 12    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[0][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[1][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[2][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[3][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[4][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[5][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[6][3]
+WARNING: [Synth 8-3331] design tbcenc_fixpt has unconnected port intlv[7][3]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2264 ; free virtual = 9452
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2264 ; free virtual = 9453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     2|
+|2     |LUT3 |     6|
+|3     |LUT4 |     3|
+|4     |LUT5 |    10|
+|5     |LUT6 |    21|
+|6     |IBUF |    32|
+|7     |OBUF |    24|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    98|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2265 ; free virtual = 9453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 16 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.949 ; gain = 312.957 ; free physical = 2267 ; free virtual = 9455
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1457.957 ; gain = 312.957 ; free physical = 2267 ; free virtual = 9455
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+11 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1583.977 ; gain = 452.355 ; free physical = 2237 ; free virtual = 9439
+INFO: [Common 17-1381] The checkpoint '/home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/tbcenc_fixpt_vivado.runs/synth_1/tbcenc_fixpt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tbcenc_fixpt_utilization_synth.rpt -pb tbcenc_fixpt_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1607.988 ; gain = 0.000 ; free physical = 2237 ; free virtual = 9439
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 16:01:12 2019...
+[Mon Apr  8 16:01:12 2019] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1144.988 ; gain = 0.000 ; free physical = 2720 ; free virtual = 9923
+# puts "### Synthesis Complete."
+### Synthesis Complete.
+# puts "### Close $myTool project."
+### Close Xilinx Vivado 2017.4 project.
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 16:01:12 2019...

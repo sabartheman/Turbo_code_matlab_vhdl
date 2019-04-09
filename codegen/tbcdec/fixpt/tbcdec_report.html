@@ -1,0 +1,444 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Fixed-Point Report for tbcdec</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+	body { font-family: monospace; }
+	h2 { font-family: Arial, Helvetica, sans-serif; color: #990000; margin-top: 50px; }
+	table,th,td { border: 1px solid black; }
+	table { margin-top: 30px; }
+	th { align: center; font-weight: bold; }
+	tr.h { background-color: #99CCFF; }
+	tr.a { background-color: #EEEEFF; }
+	tr.b { background-color: #FFFFFF; }
+	tr.c { background-color: #FFA500; }
+	tr.a td, tr.b td { border-style: none; }
+	td.left { text-align: left; }
+	td.right { text-align: right; }
+	td.center { text-align: center; }
+	td.bold { font-weight: bold; }
+	pre { padding: 0px; margin: 0px; }
+	span { font-style: italic; }
+	.code, .code tr, .code th, .code td { border: none; border-collapse: collapse; }
+	.padd { padding-left: 5px; }
+	td.cov, th.cov { width: 50px; height: 20px; text-align: center; font-weight: bold; border-right: 2px solid black; cell-spacing: 0px; }
+	td.cov { vertical-align: top; }
+	td.black { color: #000000; font-weight: bold; padding-top: 4px; }
+	td.white { color: #FFFFFF; font-weight: bold; padding-top: 4px; }
+	.code th { font-weight: bold; border-bottom: 2px solid black; }
+</style>
+</head>
+<body>
+<h3>Generated on  2019-04-09 14:27:01</h3>
+<p>The following table shows fixed point instrumentation results</p>
+<h2>Fixed-Point Report <span>custom_exp<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [y] = custom_exp(x)
+    y = exp(x);
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="c">
+<TD class="left">x</TD><TD class="left">double</TD><TD class="right">-10000000059.586273</TD><TD class="right">-0.02337254716808701</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, -21)</TD></TR>
+<TR class="b">
+<TD class="left">y</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">0.9768984752118591</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 14)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>call_custom_exp<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function y = call_custom_exp(x)
+    y = custom_exp(x);
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="c">
+<TD class="left">x</TD><TD class="left">double</TD><TD class="right">-10000000059.586273</TD><TD class="right">-0.02337254716808701</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, -21)</TD></TR>
+<TR class="b">
+<TD class="left">y</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">0.9768984752118591</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 14)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>custom_log<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [y] = custom_log(x)
+    y = log(x);
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">x</TD><TD class="left">double</TD><TD class="right">1</TD><TD class="right">1.976898475211859</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 13)</TD></TR>
+<TR class="b">
+<TD class="left">y</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">0.6815291899168415</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 14)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>call_custom_log<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function y = call_custom_log(x)
+    y = custom_log(x);
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">x</TD><TD class="left">double</TD><TD class="right">1</TD><TD class="right">1.976898475211859</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 13)</TD></TR>
+<TR class="b">
+<TD class="left">y</TD><TD class="left">double</TD><TD class="right">0</TD><TD class="right">0.6815291899168415</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 14)</TD></TR>
+</TABLE>
+
+<h2>Fixed-Point Report <span>tbcdec<span></h2>
+<TABLE class="code">
+<TR>
+<TH class="cov padd">Simulation Coverage</TH>
+<TH>Code</TH>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>function [dec_out,LLR] = tbcdec(r1,r2,r3,iter,intlv,Lc)
+
+dec_out = zeros(1,8);
+LLR = zeros(1,8);
+
+r = [r1,r2,r3];
+% demultiplex r into 3 subsequences
+rs = r(:,1);                                        % systematic bit
+r1 = r(:,2);                                        % parity bit 1
+r2 = r(:,3);                                        % parity bit 2
+
+nn = 8;
+%
+% LLR = zeros(1,8);
+% Le  = zeros(1,8);
+%
+% a1 = zeros(1,9);
+% a2 = zeros(1,9);
+% a3 = zeros(1,9);
+% a4 = zeros(1,9);
+% b1 = zeros(1,9);
+% b2 = zeros(1,9);
+% b3 = zeros(1,9);
+% b4 = zeros(1,9);
+% g1 = zeros(1,8);
+% g2 = zeros(1,8);
+% g3 = zeros(1,8);
+% g4 = zeros(1,8);
+% g5 = zeros(1,8);
+% g6 = zeros(1,8);
+% g7 = zeros(1,8);
+% g8 = zeros(1,8);
+p = intlv;                                          % intlv's permutation function
+
+Le = zeros(1,nn);                                   % initial extrinsic probability
+
+
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>for k = 1:iter
+
+
+    LLR = zeros(1,8);
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(242,246,236);">-3%</TD>
+<TD class="padd"><pre>    if mod(k,2)                                    % odd numbered iter.
+        r_temp1 = [rs r1];
+%         r_temp2 = reshape(r_temp1',1,2*nn);
+        r_temp2 = [r_temp1(1,1) r_temp1(1,2) r_temp1(2,1) r_temp1(2,2) r_temp1(3,1) r_temp1(3,2) r_temp1(4,1) r_temp1(4,2) r_temp1(5,1) r_temp1(5,2) r_temp1(6,1) r_temp1(6,2) r_temp1(7,1) r_temp1(7,2) r_temp1(8,1) r_temp1(8,2)];        
+        Le(p) = Le;                                 % de-interleave
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(180,180,180);">Constant Folded</TD>
+<TD class="padd"><pre>    else                                            % even numbered iter.
+        rs = rs(p);                                 % interleave
+        r_temp1 = [rs r2];
+        r_temp2 = [r_temp1(1,1) r_temp1(1,2) r_temp1(2,1) r_temp1(2,2) r_temp1(3,1) r_temp1(3,2) r_temp1(4,1) r_temp1(4,2) r_temp1(5,1) r_temp1(5,2) r_temp1(6,1) r_temp1(6,2) r_temp1(7,1) r_temp1(7,2) r_temp1(8,1) r_temp1(8,2)];
+        Le = Le(p);                                 % interleave
+    end</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>
+
+
+%begin of logmap function
+% function [LLR,a,b,g,Le] = logmap(r,ap,Lc_logmap)
+
+
+r_logmap = r_temp2;
+ap_logmap = Le;
+Lc_logmap  = Lc;
+
+
+
+rs_logmap = r_logmap(1:2:end-1);                                          % extract systematic bits
+r_logmap = repmat(r_logmap,8,1);
+
+% nn_logmap = length(rs_logmap);
+nn_logmap = 8;
+
+% if ap_logmap == 0
+%     ap_logmap = zeros(1,nn_logmap);
+% end
+
+La = ap_logmap;
+Le = ap_logmap';
+sp = zeros(1,8);
+sm = zeros(1,8);
+LLR = zeros(1,8);
+
+
+c = [1,1; -1,-1; -1,-1; 1,1; -1,1; 1,-1; 1,-1; -1,1];                       % list of codewords in a trellis (pay attention to the order)
+
+g = zeros(8,8);                                                             % g: gamma
+k = 1;
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>for i=1:2:15                                                                % compute gamma. eq.(6.30)
+    g(:,k) = 0.5*Lc_logmap*(c(:,1).*r_logmap(:,i) + c(:,2).*r_logmap(:,i+1)) + 0.5*c(:,1).*Le(k);
+    k = k + 1;
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>
+
+
+g1 = g([1 3 2 4 5 7 6 8],:);                                                % re-order gamma to ficilitate alpha calculation below
+a = -1e10*ones(4,9); a(1,1) = 0;                                            % a: alpha. initialization
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>for i = 2:9                                                                 % compute alpha. eq.(6.29) and (6.36)
+    a1 = g1(1,i-1) + a(1,i-1); a2 = g1(2,i-1) + a(3,i-1);
+    a(1,i) = max(a1,a2) + call_custom_log(1+call_custom_exp(-abs(a1-a2)));
+
+    a1 = g1(3,i-1) + a(1,i-1); a2 = g1(4,i-1) + a(3,i-1);
+    a(2,i) = max(a1,a2) + call_custom_log(1+call_custom_exp(-abs(a1-a2)));
+
+    a1 = g1(5,i-1) + a(2,i-1); a2 = g1(6,i-1) + a(4,i-1);
+    a(3,i) = max(a1,a2) + call_custom_log(1+call_custom_exp(-abs(a1-a2)));
+
+    a1 = g1(7,i-1) + a(2,i-1); a2 = g1(8,i-1) + a(4,i-1);
+    a(4,i) = max(a1,a2) + call_custom_log(1+call_custom_exp(-abs(a1-a2)));
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>
+
+b = -1e10*ones(4,9); b(1,end) = 0;               % b: beta. initialization
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>for i = 8:-1:1                                    % compute beta. eq.(6.29) and (6.36)
+    b1 = g(1,i) + b(1,i+1); b2 = g(2,i) + b(2,i+1);
+    b(1,i) = max(b1,b2) + call_custom_log(1+call_custom_exp(-abs(b1-b2)));
+
+    b1 = g(5,i) + b(3,i+1); b2 = g(6,i) + b(4,i+1);
+    b(2,i) = max(b1,b2) + call_custom_log(1+call_custom_exp(-abs(b1-b2)));
+
+    b1 = g(3,i) + b(1,i+1); b2 = g(4,i) + b(2,i+1);
+    b(3,i) = max(b1,b2) + call_custom_log(1+call_custom_exp(-abs(b1-b2)));
+
+    b1 = g(7,i) + b(3,i+1); b2 = g(8,i) + b(4,i+1);
+    b(4,i) = max(b1,b2) + call_custom_log(1+call_custom_exp(-abs(b1-b2)));
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>
+
+</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(157,38,35);">0%</TD>
+<TD class="padd"><pre>for i=1:nn_logmap                                                  % compute LLR. eq.(6.31) and (6.36)                                                   %
+    spa = a(1,i) + g(1,i) + b(1,i+1); spb = a(3,i) + g(4,i) + b(2,i+1);
+    sp1 = max(spa,spb) + call_custom_log(1+call_custom_exp(-abs(spa-spb)));
+
+    spa = a(2,i) + g(6,i) + b(4,i+1); spb = a(4,i) + g(7,i) + b(3,i+1);
+    sp2 = max(spa,spb) + call_custom_log(1+call_custom_exp(-abs(spa-spb)));
+
+    sp(i) = max(sp1,sp2) + call_custom_log(1+call_custom_exp(-abs(sp1-sp2)));
+
+    sma = a(1,i) + g(2,i) + b(2,i+1); smb = a(3,i) + g(3,i) + b(1,i+1);
+    sm1 = max(sma,smb) + call_custom_log(1+call_custom_exp(-abs(sma-smb)));
+
+    sma = a(2,i) + g(5,i) + b(3,i+1); smb = a(4,i) + g(8,i) + b(4,i+1);
+    sm2 = max(sma,smb) + call_custom_log(1+call_custom_exp(-abs(sma-smb)));
+
+    sm(i) = max(sm1,sm2) + call_custom_log(1+call_custom_exp(-abs(sm1-sm2)));
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov black" style="background-color: rgb(255,160,118);">Once</TD>
+<TD class="padd"><pre>
+
+
+% a1 = a(1,:);
+% a2 = a(2,:);
+% a3 = a(3,:);
+% a4 = a(4,:);
+%
+% b1 = b(1,:);
+% b2 = b(2,:);
+% b3 = b(3,:);
+% b4 = b(4,:);
+%
+% g1 = g(1,:);
+% g2 = g(2,:);
+% g3 = g(3,:);
+% g4 = g(4,:);
+% g5 = g(5,:);
+% g6 = g(6,:);
+% g7 = g(7,:);
+% g8 = g(8,:);
+
+
+LLR = sp - sm;
+
+Le = LLR - Lc_logmap*rs_logmap - La;                                      % comupte Le.
+%logmap function end
+
+
+%     %hdl coder doesn't like functions with arrays for io
+%     [LLR,a1,a2,a3,a4,b1,b2,b3,b4,g1,g2,g3,g4,g5,g6,g7,g8,Le] = hdl_logmap(r,Le,Lc_logmap);               % logmap algorithm
+%
+%     a = [a1; a2 ;a3; a4];
+%     b = [b1; b2; b3; b4];
+%     g = [g1; g2; g3; g4; g5; g6; g7; g8];
+dec_out = sign(LLR);
+
+end</pre></TD>
+</TR>
+<TR>
+<TD class="cov white" style="background-color: rgb(5,112,9);">100%</TD>
+<TD class="padd"><pre>
+
+    %[LLR,a,b,g,Le] = maxlogmap(r,Le,Lc);            % maxlogmap algorithm
+% end
+end</pre></TD>
+</TR>
+</TABLE>
+<TABLE><TR class="h"><th>Variable Name</th><th>Type</th><th>Sim Min</th><th>Sim Max</th><th>Static Min</th><th>Static Max</th><th>Whole Number</th><th>ProposedType <BR /> (Best For WL = 14)</th></TR><TR class="a">
+<TD class="left">LLR</TD><TD class="left">double 1 x 8 </TD><TD class="right">-100.99506916319764</TD><TD class="right">82.77340488309056</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 6)</TD></TR>
+<TR class="b">
+<TD class="left">La</TD><TD class="left">double 1 x 8 </TD><TD class="right">-34.67476852906827</TD><TD class="right">33.4809977413229</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 7)</TD></TR>
+<TR class="a">
+<TD class="left">Lc</TD><TD class="left">double</TD><TD class="right">6.324555320336759</TD><TD class="right">6.324555320336759</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 11)</TD></TR>
+<TR class="b">
+<TD class="left">Lc_logmap</TD><TD class="left">double</TD><TD class="right">6.324555320336759</TD><TD class="right">6.324555320336759</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 11)</TD></TR>
+<TR class="a">
+<TD class="left">Le > 1</TD><TD class="left">double 8 x 1 </TD><TD class="right">-34.67476852906827</TD><TD class="right">33.4809977413229</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 7)</TD></TR>
+<TR class="b">
+<TD class="left">Le > 2</TD><TD class="left">double 1 x 8 </TD><TD class="right">-59.56306552132115</TD><TD class="right">44.14384841869722</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 7)</TD></TR>
+<TR class="a">
+<TD class="left bold">a*</TD><TD class="left">double 4 x 9 </TD><TD class="right">-10000000000</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left bold">a1*</TD><TD class="left">double</TD><TD class="right">-10000000016.343527</TD><TD class="right">135.48033160966577</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="a">
+<TD class="left bold">a2*</TD><TD class="left">double</TD><TD class="right">-10000000025.088476</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left">ap_logmap</TD><TD class="left">double 1 x 8 </TD><TD class="right">-34.67476852906827</TD><TD class="right">33.4809977413229</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 7)</TD></TR>
+<TR class="a">
+<TD class="left bold">b*</TD><TD class="left">double 4 x 9 </TD><TD class="right">-10000000000</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left bold">b1*</TD><TD class="left">double</TD><TD class="right">-10000000015.364546</TD><TD class="right">100.47002355422768</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="a">
+<TD class="left bold">b2*</TD><TD class="left">double</TD><TD class="right">-10000000019.466778</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left">c</TD><TD class="left">double 8 x 2 </TD><TD class="right">-1</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 8, 0)</TD></TR>
+<TR class="a">
+<TD class="left">dec_out</TD><TD class="left">double 1 x 8 </TD><TD class="right">-1</TD><TD class="right">1</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(1, 8, 0)</TD></TR>
+<TR class="b">
+<TD class="left">g</TD><TD class="left">double 8 x 8 </TD><TD class="right">-25.420662603716522</TD><TD class="right">25.420662603716522</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 8)</TD></TR>
+<TR class="a">
+<TD class="left">g1</TD><TD class="left">double 8 x 8 </TD><TD class="right">-25.420662603716522</TD><TD class="right">25.420662603716522</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 8)</TD></TR>
+<TR class="b">
+<TD class="left">i</TD><TD class="left">double</TD><TD class="right">1</TD><TD class="right">15</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="a">
+<TD class="left">intlv</TD><TD class="left">double 1 x 8 </TD><TD class="right">1</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="b">
+<TD class="left">iter</TD><TD class="left">double</TD><TD class="right">5</TD><TD class="right">5</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="a">
+<TD class="left">k</TD><TD class="left">double</TD><TD class="right">1</TD><TD class="right">9</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="b">
+<TD class="left">nn</TD><TD class="left">double</TD><TD class="right">8</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="a">
+<TD class="left">nn_logmap</TD><TD class="left">double</TD><TD class="right">8</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="b">
+<TD class="left">p</TD><TD class="left">double 1 x 8 </TD><TD class="right">1</TD><TD class="right">8</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">Yes</TD><TD class="left">numerictype(0, 8, 0)</TD></TR>
+<TR class="a">
+<TD class="left">r</TD><TD class="left">double 8 x 3 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="b">
+<TD class="left">r1</TD><TD class="left">double 8 x 1 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">1.2508413172328414</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="a">
+<TD class="left">r2</TD><TD class="left">double 8 x 1 </TD><TD class="right">-1.9308501743628455</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 12)</TD></TR>
+<TR class="b">
+<TD class="left">r3</TD><TD class="left">double 8 x 1 </TD><TD class="right">-1.8430120449126954</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 12)</TD></TR>
+<TR class="a">
+<TD class="left">r_logmap > 1</TD><TD class="left">double 1 x 16 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="b">
+<TD class="left">r_logmap > 2</TD><TD class="left">double 8 x 16 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="a">
+<TD class="left">r_temp1</TD><TD class="left">double 8 x 2 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="b">
+<TD class="left">r_temp2</TD><TD class="left">double 1 x 16 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">1.4244613539074102</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="a">
+<TD class="left">rs</TD><TD class="left">double 8 x 1 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">0.9536898303962789</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="b">
+<TD class="left">rs_logmap</TD><TD class="left">double 1 x 8 </TD><TD class="right">-2.1797020562107368</TD><TD class="right">0.9536898303962789</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 16, 11)</TD></TR>
+<TR class="a">
+<TD class="left">sm</TD><TD class="left">double 1 x 8 </TD><TD class="right">0</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 6)</TD></TR>
+<TR class="b">
+<TD class="left">sm1</TD><TD class="left">double</TD><TD class="right">12.260491460561653</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 6)</TD></TR>
+<TR class="a">
+<TD class="left bold">sm2*</TD><TD class="left">double</TD><TD class="right">-9999999974.816391</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left bold">sma*</TD><TD class="left">double</TD><TD class="right">-9999999977.774845</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="a">
+<TD class="left bold">smb*</TD><TD class="left">double</TD><TD class="right">-9999999985.825966</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left">sp</TD><TD class="left">double 1 x 8 </TD><TD class="right">0</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 6)</TD></TR>
+<TR class="a">
+<TD class="left">sp1</TD><TD class="left">double</TD><TD class="right">4.510389567063072</TD><TD class="right">96.54677503412154</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(0, 16, 7)</TD></TR>
+<TR class="b">
+<TD class="left bold">sp2*</TD><TD class="left">double</TD><TD class="right">-9999999977.42508</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="a">
+<TD class="left bold">spa*</TD><TD class="left">double</TD><TD class="right">-9999999977.478374</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+<TR class="b">
+<TD class="left bold">spb*</TD><TD class="left">double</TD><TD class="right">-9999999982.668955</TD><TD class="right">150.5099721695467</TD><TD class="right"></TD><TD class="right"></TD><TD class="left">No</TD><TD class="left">numerictype(1, 48, 1)</TD></TR>
+</TABLE>
+
+</body>
+</html>

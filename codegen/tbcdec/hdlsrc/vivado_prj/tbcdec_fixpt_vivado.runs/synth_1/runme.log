@@ -1,0 +1,42 @@
+
+*** Running vivado
+    with args -log tbcdec_fixpt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tbcdec_fixpt.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source tbcdec_fixpt.tcl -notrace
+Command: synth_design -top tbcdec_fixpt -part xc7a200tlfbg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15301 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.992 ; gain = 65.000 ; free physical = 7642 ; free virtual = 10287
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tbcdec_fixpt' [/home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcdec/hdlsrc/tbcdec_fixpt.vhd:43]
+
+*** Running vivado
+    with args -log tbcdec_fixpt.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tbcdec_fixpt.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source tbcdec_fixpt.tcl -notrace
+Command: synth_design -top tbcdec_fixpt -part xc7a200tlfbg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17872 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.996 ; gain = 65.000 ; free physical = 9746 ; free virtual = 11604
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tbcdec_fixpt' [/home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcdec/hdlsrc/tbcdec_fixpt.vhd:43]

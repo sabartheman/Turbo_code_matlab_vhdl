@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Apr  8 16:00:45 2019
+# Process ID: 22441
+# Current directory: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/tbcenc_fixpt_vivado.runs/synth_1
+# Command line: vivado -log tbcenc_fixpt.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tbcenc_fixpt.tcl
+# Log file: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/tbcenc_fixpt_vivado.runs/synth_1/tbcenc_fixpt.vds
+# Journal file: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcenc/hdlsrc/vivado_prj/tbcenc_fixpt_vivado.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tbcenc_fixpt.tcl -notrace

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tlfbg676-2L" LaunchTime="1554843359">
+  <File Type="VDS-TIMING-PB" Name="tbcdec_fixpt_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="tbcdec_fixpt_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="tbcdec_fixpt.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="tbcdec_fixpt_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="tbcdec_fixpt_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="tbcdec_fixpt_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="tbcdec_fixpt.vds"/>
+  <File Type="REPORTS-TCL" Name="tbcdec_fixpt_reports.tcl"/>
+  <File Type="PA-TCL" Name="tbcdec_fixpt.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../tbcdec_fixpt_pkg.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../tbcdec_fixpt.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="tbcdec_fixpt"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

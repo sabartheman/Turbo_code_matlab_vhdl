@@ -1,0 +1,26 @@
+ISim log file
+Running: ./tbcenc_fixpt_isim_design.exe -tclbatch tbcenc_fixpt_tb_sim.do 
+ISim P.20131013 (signature 0xfbc00daa)
+This is a Full version of ISim.
+Time resolution is 1 ps
+# run all
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+Finished circuit initialization process.
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 24 ns, Instance /tbcenc_fixpt_tb/u_tbcenc_fixpt/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 40 ns(1): Note: **************TEST COMPLETED (PASSED)************** (/tbcenc_fixpt_tb/).
+# quit

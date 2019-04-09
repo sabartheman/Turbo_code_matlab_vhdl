@@ -1,0 +1,1 @@
+-f "tbcdec_fixpt_tb_simprj.do" 

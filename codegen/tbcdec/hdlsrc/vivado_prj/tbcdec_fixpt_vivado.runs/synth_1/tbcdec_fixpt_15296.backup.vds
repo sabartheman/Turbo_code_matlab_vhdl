@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Apr  9 14:37:28 2019
+# Process ID: 15296
+# Current directory: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcdec/hdlsrc/vivado_prj/tbcdec_fixpt_vivado.runs/synth_1
+# Command line: vivado -log tbcdec_fixpt.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tbcdec_fixpt.tcl
+# Log file: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcdec/hdlsrc/vivado_prj/tbcdec_fixpt_vivado.runs/synth_1/tbcdec_fixpt.vds
+# Journal file: /home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcdec/hdlsrc/vivado_prj/tbcdec_fixpt_vivado.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source tbcdec_fixpt.tcl -notrace
+Command: synth_design -top tbcdec_fixpt -part xc7a200tlfbg676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200tl'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15301 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1209.992 ; gain = 65.000 ; free physical = 7642 ; free virtual = 10287
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'tbcdec_fixpt' [/home/sky/Documents/MATLAB/Turbo_codes/codegen/tbcdec/hdlsrc/tbcdec_fixpt.vhd:43]
